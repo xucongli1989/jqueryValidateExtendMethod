@@ -25,6 +25,7 @@ $.validator.setDefaults({
 
 /**
 * 自定义ajax验证
+* 注意：ajax返回的必须为json格式，且至少要包含IsSuccess（验证是否通过）、Message（提示信息）属性
 */
 $.validator.addMethod("JqCustomRemote", function (value, element, ajaxOption) {
     var defaults = {
